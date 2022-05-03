@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+</head>
+<body>
+    <header>
+        <title>Draw by Memory</title>
+        <div class="overlay">
+        <h1 class="title">Draw by Memory</h1>
+        <h3 class="subt">Welcome to the best page ever</h3>
+        <br>
+    </header>
+    <div class="container">
+        <p>An image will appear on the right once you click the button, be ready to draw!</p>
+    </div>
+    <div id ="wrapper">
+        <div class="center">
+            <canvas id="canvas"></canvas>
+            <button class="play"><img src="img/favicon.ico" width="40px" height="40px"/></button>
+            <div class="card">
+                <img src="img/messsi.jpg" alt="" class="card-image">
+                <h3 class="card-tittle">MESSI</h3>
+            </div>
+        </div>
+    </div>
+        <div class="tools">
+          <button onClick="undo_line()" type="button" class="button">Undo</button>
+          <button onClick="clear_canvas()" type="button" class="button">Clear</button>
+        </div>
+        <div class="tools">
+          <div onClick="change_color(this)" class="color-field" style="background:  red;"></div>
+          <div onClick="change_color(this)" class="color-field" style="background:  blue;"></div>
+          <div onClick="change_color(this)" class="color-field" style="background:  black;"></div>
+          <div onClick="change_color(this)" class="color-field" style="background:  white;"></div>
+          <input onInput="draw_color = this.value" type="color" class="color-picker">
+          <input onInput="draw_width = this.value" type="range" min="1" max="100" class="pen-range">
+        </div>
+    <footer>
+        <div class="footer-content">
+            <h3 class="f">Proyecto Laboratorio de Computación II UCC</h3>
+            <P>Integrantes del proyecto: Bisio Gonzalo y Diaz Pedro<br></P>
+            </ul>
+        </div>
+      </footer>
+</body>
+</html> 
