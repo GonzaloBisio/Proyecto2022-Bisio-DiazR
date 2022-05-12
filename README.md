@@ -7,6 +7,8 @@ Cuando el contador llegue a cero, la imagen del personaje se mostrará, y bajo s
 La interfaz de la "pizarra" donde se dibujará está hecha a base de Canvas y tiene opciones básicas de Paint,
 tales como colores, tamaño del pincel, botones para deshacer y borrar, etc.
 
+![](<img/mockup.png>)
+
 ## :white_check_mark: Listado de Tecnologías:
 
   - HTML==5.0
@@ -27,9 +29,9 @@ $ git clone --branch master https://github.com/GonzaloBisio/Proyecto2022-Bisio-D
 
 Para ejecutar proyecto deberá ejecutar el archivo de la carpeta recientemente clonada, llamado index.html:
 
-![](<images/1.png>)
+![](<img/install.png>)
 
-## :memo: Licencia ##:
+## :memo: Licencia:
 
 Este parcial pertenece a la Universidad Católica de Córdoba.
 
