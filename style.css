@@ -7,6 +7,8 @@ canvas {
 	box-shadow: -3px 2px 9px 6px black;
 	cursor: pointer;
 	background-color: #cacdd2;
+	margin-top: 40px;
+	
 }
 
 .tools .color-field {
@@ -45,6 +47,41 @@ canvas {
 	margin: 0 10px;
 }
 
+.timer {
+	font-family: sans-serif;
+	display: inline-block;
+	padding: 24px 32px;
+	border-radius: 30px;
+	background: rgb(0, 0, 0);
+	margin-left: 150px;
+	color: rgb(193, 0, 0);
+  }
+  
+.timer__part {
+	font-size: 36px;
+	font-weight: bold;
+  }
+  
+.timer__btn {
+	width: 50px;
+	height: 50px;
+	margin-left: 16px;
+	border-radius: 50%;
+	border: none;
+	color: rgb(255, 255, 255);
+	background: #8208e6;
+	cursor: pointer;
+  }
+  
+.timer__btn--start {
+	background: #00b84c;
+  }
+  
+.timer__btn--stop {
+	background: #ff0256;
+  }
+  
+
 button{
 	justify-content: center;
 }
@@ -79,7 +116,7 @@ button:hover {
 @keyframes pulsate {
 	0% {
 		box-shadow:
-			0 0 25px #00c9e4,
+			0 0 25px #d40000,
 			0 0 26px #1c0a50;
 	}
 }
