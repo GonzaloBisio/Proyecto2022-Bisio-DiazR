@@ -23,9 +23,9 @@ canvas.addEventListener("touchmove", draw, false);
 canvas.addEventListener("mousedown", start, false);
 canvas.addEventListener("mousemove", draw, false);
 
-canvas.addEventListener("touchend", stop, false);
-canvas.addEventListener("mouseup", stop, false);
-canvas.addEventListener("mouseout", stop, false);
+canvas.addEventListener("touchend", parar, false);
+canvas.addEventListener("mouseup", parar, false);
+canvas.addEventListener("mouseout", parar, false);
 
 function start(event){
   is_drawing = true;
@@ -48,7 +48,7 @@ function draw(event){
   event.preventDefault();
 }
 
-function stop(event){
+function parar(event){
   if (is_drawing){
     context.stroke();
     context.closePath();
@@ -81,6 +81,18 @@ function undo_line(){
     context.putImageData(restore_array[index],0,0);
   }
 }
+
+image_array = ["acuatico.png", "bestia.png", "cannonbolt.png", "cuatrobrazos.png", "diamante.png", "fantasmatico.png", "fuego.png", "insectoide.png", "materiagris.png", "ultrat.png", "xlr8.png"];
+const string_array = ["Acuático", "Bestia", "Cannonbolt", "Cuatrobrazos", "Diamante", "Fantasmático", "Fuego", "Insectoide", "Materia Gris", "Ultra T", "XLR-8"]; 
+
+function get_random_image() {
+  random_index = Math.floor(Math.random() * image_array.length);
+  selected_image = image_array[random_index]; 
+  document.getElementById("image_shower").src = "./characters/"+selected_image;
+  selected_name = string_array[random_index];
+  document.getElementById("string_shower").innerHTML = selected_name;
+}
+
 
 class Timer {
   constructor(root) {

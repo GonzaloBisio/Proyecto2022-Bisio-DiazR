@@ -38,14 +38,15 @@
       </nav>
       <section id="principal" class="container-fluid">
           <div class="row align-items-center mx-auto">
-            <div class="col-lg-5">
-                <img src="img/messsi.jpg" alt="personaje" width="550px" height="350px">
+            <div class="flex-direction-column justify-content-center col-lg-5">
+                <img id="image_shower" width="300px" height="350px">
                 <div class="timer"></div>
             </div>
             <div class="col-lg-2">
-                <button class="button">Play</button>
-            </div>
-            <div class="col-lg-5 mt-5">
+                <h2 id="string_shower"></h2>
+                <button onclick="get_random_image()" class="button">Play</button>
+              </div>
+            <div class="col-lg-5 mt-3">
                 <canvas id="canvas"></canvas>
                 <div class="tools d-flex align-items justify-content-center flex-wrap mt-3">
                     <button onClick="undo_line()" type="button" class="button">Undo</button>
