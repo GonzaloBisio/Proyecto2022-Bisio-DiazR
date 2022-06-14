@@ -147,9 +147,11 @@ function checkSecond(sec) {
 }
 
 const btn = document.getElementById('play');
+const img = document.getElementById('img')
 
 function ocultar(){
 {
     btn.style.display = 'none';
+    img.style.display = 'none';
 }}
 

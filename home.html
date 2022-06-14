@@ -11,14 +11,19 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="img/logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./intro.css" />
 
   <title>Draw by Memory!</title>
 </head>
 
-<body>
+<body style="background-color: #454545;">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg text-light bg-black">
+  <nav class="navbar navbar-expand-lg text-light bg-gray">
     <div class="container-fluid">
       <a class="navbar-brand" href="home.html"><img src="img/logo.png" height="75px" width="75px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +32,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="home.html">Home</a>
+            <a class="nav-link" href="index.html">Game</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">How to Play</a>
@@ -39,34 +44,13 @@
     </div>
   </nav>
   <section id="principal" class="container-fluid">
-    <div class="row align-items-center mx-auto">
-      <div class="flex-direction-column justify-content-center col-lg-5">
-        <img id="image_shower" width="300px" height="350px">
-        <div class="countdown">
-          <p id="countdown">02:00</p>
-        </div>
-      </div>
-      <div class="col-lg-2">
-        <h2 class="shower" id="string_shower"></h2>
-        <button onclick="get_random_image(), empezar(),ocultar()" class="button" id="play">Play</button>
-      </div>
-      <div class="col-lg-5 mt-3">
-        <canvas id="canvas"></canvas>
-        <div class="tools d-flex align-items justify-content-center flex-wrap mt-3">
-          <button onClick="undo_line()" type="button" class="button">Undo</button>
-          <button onClick="clear_canvas()" type="button" class="button">Clear</button>
-        </div>
-        <div class="tools d-flex align-items justify-content-center flex-wrap mt-3">
-          <div onClick="change_color(this)" class="color-field" style="background:  red;"></div>
-          <div onClick="change_color(this)" class="color-field" style="background:  blue;"></div>
-          <div onClick="change_color(this)" class="color-field" style="background:  black;"></div>
-          <div onClick="change_color(this)" class="color-field" style="background:  white;"></div>
-        </div>
-        <div class="tools d-flex align-items justify-content-center flex-wrap mt-3">
-          <input onInput="draw_color = this.value" type="color" class="color-picker">
-          <input onInput="draw_width = this.value" type="range" min="1" max="100" class="pen-range">
-        </div>
-      </div>
+    <div class="card" onclick="location.href='index.html';">
+      <p>
+        Gonzalo Bisio - Pedro Díaz R
+      </p> 
+      <h2>
+        Draw by Memory! - UCC Proyecto Laboratorio Computación 
+      </h2>
     </div>
   </section>
   <footer class="w-100 d-flex align-items justify-content-center flex-wrap mt-5">
