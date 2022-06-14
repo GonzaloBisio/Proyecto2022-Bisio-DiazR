@@ -40,11 +40,11 @@
           <div class="row align-items-center mx-auto">
             <div class="flex-direction-column justify-content-center col-lg-5">
                 <img id="image_shower" width="300px" height="350px">
-                <div class="timer"></div>
+                <div class="countdown"><p id="countdown">02:00</p></div>
             </div>
             <div class="col-lg-2">
-                <h2 id="string_shower"></h2>
-                <button onclick="get_random_image()" class="button">Play</button>
+                <h2 class="shower" id="string_shower"></h2>
+                <button onclick="get_random_image(), empezar(),ocultar()" class="button" id="play">Play</button>
               </div>
             <div class="col-lg-5 mt-3">
                 <canvas id="canvas"></canvas>

@@ -138,6 +138,22 @@ footer p{
 
 #iconos i{
     font-size: 26px;
-    padding: 0 8px;
-    color: #f3f3f3;
+    padding: 0 8px;	
+    color: #ffffff;
+}
+
+.countdown{
+	font-family: sans-serif;
+	font-size: 30px;
+	display: inline-block;
+	padding: 24px 32px;
+	border-radius: 30px;
+	background: rgb(0, 0, 0);
+	margin-left: 55px;
+	margin-right: 5px;
+	color: rgb(193, 0, 0);
+}
+
+h2.shower{
+	color: white;
 }
