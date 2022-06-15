@@ -151,7 +151,6 @@ h2.shower{
 	font-size: 50px;
 	align-self: center;
 	justify-content: center;
-<<<<<<< HEAD
 }
 
 .container{
@@ -199,16 +198,48 @@ h2.shower{
 	padding: 10px;
 }
 
-.card a{
-	background-color: black;
-	color: white;
-	padding: 15px 20px;
-	display: block;
+
+.box{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	display: inline-flex;
+}
+
+.box-display{
+	background-color: rgb(45, 45, 46);
+	color: rgb(255, 255, 255);
+	width: 420px;
+	height: 600px;
+	margin: 20px;
+	border-radius: 5px	 ;
 	text-align: center;
-	margin: 20px 50px;
-	border-radius: 15px 15px;
-	text-decoration: none;
 }
-=======
+
+.box-2{
+	background-image: url(img/pencil.png);
 }
->>>>>>> 452defb3e5b5b7ea59733507ee1979c21118608d
+.box-1{
+	background-image: url(img/q.jpeg);
+}
+.box-3{
+	background-image: url(img/clock.jpeg);
+}
+
+.swal-modal {
+	background-color: black;
+	border: 3px solid whitesmoke;
+}
+
+.swal-title {
+	color:whitesmoke;
+}
+.swal-text {
+	color:whitesmoke;
+}
+
+.swal-button {
+	background-color: black;
+	border: 1px solid whitesmoke;
+	color: whitesmoke;
+  }

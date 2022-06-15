@@ -106,7 +106,7 @@ function delay(time) {
 async function tiempo(){
   document.getElementById("image_shower").src = "./img/a.png";
   btn.style.visibility = 'hidden';
-  for (var i = 5; i > -1; i--) {
+  for (var i = 59; i > -1; i--) {
     await delay(1000);
     n = i;
     console.log(i);
