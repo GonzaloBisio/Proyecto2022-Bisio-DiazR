@@ -99,12 +99,6 @@ canvas {
 	justify-content: center;
 }
 
-.container {
-	margin-top: 50px;
-	display: flex;
-	justify-content: center;
-	vertical-align: middle;
-}
 
 button:hover {
 	animation: pulsate 0.5s ease-in-out;
@@ -157,4 +151,64 @@ h2.shower{
 	font-size: 50px;
 	align-self: center;
 	justify-content: center;
+<<<<<<< HEAD
 }
+
+.container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+
+.card:hover{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	transform: scale(1.05);
+	transition: all 0.5s ease;
+}
+
+.card{
+	background-color: rgb(45, 45, 46);
+	color: rgb(255, 255, 255);
+	width: 420px;
+	height: 600px;
+	margin: 20px;
+	border-radius: 15px	 ;
+	text-align: center;
+}
+
+.card-image{
+	height: 270px;
+	margin-bottom: 15px;
+	background-size: cover;
+	border-radius: 15px 15px 0 0;
+}
+
+.card-1{
+	background-image: url(img/messsi.jpg);
+}
+
+.card-2{
+	background-image: url(img/pedro.png);
+}
+
+.card p {
+	padding: 10px;
+}
+
+.card a{
+	background-color: black;
+	color: white;
+	padding: 15px 20px;
+	display: block;
+	text-align: center;
+	margin: 20px 50px;
+	border-radius: 15px 15px;
+	text-decoration: none;
+}
+=======
+}
+>>>>>>> 452defb3e5b5b7ea59733507ee1979c21118608d
