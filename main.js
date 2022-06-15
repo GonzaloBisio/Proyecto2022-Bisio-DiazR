@@ -82,7 +82,7 @@ function undo_line() {
 }
 
 image_array = ["ben10.png", "bob.png", "caillou.png", "gaturro.png", "goku.png", "homer.png", "marge.png", "morty.png", "patricio.png", "pikachu.png", "rick.png", "shrek.png", "stitch.png", "timmy.png"];
-const string_array = ["Ben 10", "Bob Esponja", "Caillou", "Gaturro", "Goku", "Homero", "Marge", "Morty", "Patricio", "Pikachu", "Rick", "Shrek", "Stitch", "Timmy Turner"];
+const string_array = ["Ben 10", "Bob Esponja", "Caillou", "Gaturro", "Goku", "Homero", "Marge", "Morty", "Patricio", "Pikachu", "Rick", "Shrek", "Stitch", "Timmy"];
 
 function get_random_image() {
   random_index = Math.floor(Math.random() * image_array.length)
@@ -106,7 +106,7 @@ function delay(time) {
 async function tiempo(){
   document.getElementById("image_shower").src = "./img/a.png";
   btn.style.visibility = 'hidden';
-  for (var i = 59; i > -1; i--) {
+  for (var i = 5; i > -1; i--) {
     await delay(1000);
     n = i;
     console.log(i);
@@ -118,6 +118,10 @@ async function tiempo(){
  btn.style.visibility= 'visible';
  document.getElementById('countdown').innerHTML = "01:00";
  document.getElementById("image_shower").src = "./characters/" + selected_image;
- is_drawing = false;
+  swal({
+    title: "Time's Up!",
+    text: "Wanna play again?",
+    icon: "warning",
+  })
 }
 
