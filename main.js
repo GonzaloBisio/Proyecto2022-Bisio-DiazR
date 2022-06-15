@@ -81,8 +81,8 @@ function undo_line() {
   }
 }
 
-image_array = ["bestia.png", "cannonbolt.png", "cuatrobrazos.png", "diamante.png", "fantasmatico.png", "fuego.png", "insectoide.png", "materiagris.png", "ultrat.png", "xlr8.png"];
-const string_array = ["Bestia", "Cannonbolt", "Cuatrobrazos", "Diamante", "Fantasmático", "Fuego", "Insectoide", "Materia Gris", "Ultra T", "XLR-8"];
+image_array = ["ben10.png", "bob.png", "caillou.png", "gaturro.png", "goku.png", "homer.png", "marge.png", "morty.png", "patricio.png", "pikachu.png", "rick.png", "shrek.png", "stitch.png", "timmy.png"];
+const string_array = ["Ben 10", "Bob Esponja", "Caillou", "Gaturro", "Goku", "Homero", "Marge", "Morty", "Patricio", "Pikachu", "Rick", "Shrek", "Stitch", "Timmy Turner"];
 
 function get_random_image() {
   random_index = Math.floor(Math.random() * image_array.length)
