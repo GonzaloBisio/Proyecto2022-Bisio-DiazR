@@ -7,7 +7,7 @@ canvas {
 	box-shadow: -3px 2px 9px 6px black;
 	cursor: pointer;
 	background-color: #cacdd2;
-	margin-top: 40px;
+	margin-top: 10px;
 	
 }
 
@@ -26,6 +26,7 @@ canvas {
 
 .button {
 	align-self: center;
+	justify-content: center;
 	width: 100px;
 	height: 40px;
 	border: 2px solid rgb(76, 76, 76);
@@ -82,9 +83,6 @@ canvas {
   }
   
 
-button{
-	justify-content: center;
-}
 .play{
 	transform: translate(0%, -225%);
 	margin-left: 30px;
@@ -149,13 +147,14 @@ footer p{
 	padding: 24px 32px;
 	border-radius: 30px;
 	background: rgb(0, 0, 0);
-	margin-left: 55px;
-	margin-right: 5px;
+	margin-top: 20px;
+	margin-left: 100px;
 	color: rgb(193, 0, 0);
 }
 
 h2.shower{
 	color: white;
 	font-size: 50px;
-	margin-right: 40px;
+	align-self: center;
+	justify-content: center;
 }

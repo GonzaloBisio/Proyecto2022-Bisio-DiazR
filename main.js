@@ -28,7 +28,7 @@ canvas.addEventListener("mouseup", parar, false)
 canvas.addEventListener("mouseout", parar, false)
 
 function start(event) {
-  is_drawing = true
+  is_drawing= true
   context.beginPath()
   context.moveTo(event.clientX - canvas.offsetLeft,
     event.clientY - canvas.offsetTop)
@@ -37,8 +37,7 @@ function start(event) {
 
 function draw(event) {
   if (is_drawing) {
-    context.lineTo(event.clientX - canvas.offsetLeft,
-      event.clientY - canvas.offsetTop)
+    context.lineTo(event.clientX - canvas.offsetLeft,event.clientY - canvas.offsetTop)
     context.strokeStyle = draw_color
     context.lineWidth = draw_width
     context.lineCap = "round"
@@ -82,76 +81,43 @@ function undo_line() {
   }
 }
 
-image_array = ["acuatico.png", "bestia.png", "cannonbolt.png", "cuatrobrazos.png", "diamante.png", "fantasmatico.png", "fuego.png", "insectoide.png", "materiagris.png", "ultrat.png", "xlr8.png"];
-const string_array = ["Acuático", "Bestia", "Cannonbolt", "Cuatrobrazos", "Diamante", "Fantasmático", "Fuego", "Insectoide", "Materia Gris", "Ultra T", "XLR-8"];
+image_array = ["bestia.png", "cannonbolt.png", "cuatrobrazos.png", "diamante.png", "fantasmatico.png", "fuego.png", "insectoide.png", "materiagris.png", "ultrat.png", "xlr8.png"];
+const string_array = ["Bestia", "Cannonbolt", "Cuatrobrazos", "Diamante", "Fantasmático", "Fuego", "Insectoide", "Materia Gris", "Ultra T", "XLR-8"];
 
 function get_random_image() {
   random_index = Math.floor(Math.random() * image_array.length)
   selected_image = image_array[random_index];
-  document.getElementById("image_shower").src = "./characters/" + selected_image
   selected_name = string_array[random_index];
   document.getElementById("string_shower").innerHTML = selected_name
-}
+  context.fillStyle = start_background_color;
+  context.clearRect(0, 0, canvas.width, canvas.height)
+  context.fillRect(0, 0, canvas.width, canvas.height)
 
-/*
-
-let time = 1
-
-const count = document.getElementById("countdown")
-
-function empezar(){
-  let refreshIntelvalId =setInterval(updateTimer,1000)
-}
-
-
-function updateTimer() {
-  let seconds = time * 60
-
-  seconds = seconds < 10 ? '0' + seconds : seconds
-
-  count.innerHTML = `00:${seconds}`
-  time --
-
-  if (time < 0) { //stop the setInterval whe time = 0 for avoid negative time
-    clearInterval(refreshIntervalId);
-}
-
-}
-
-*/
-
-document.getElementById('countdown').innerHTML ="0"+2 + ":" + 0+"0";
-
-
-function empezar() {
-  var presentTime = document.getElementById('countdown').innerHTML;
-  var timeArray = presentTime.split(/[:]+/);
-  var m = timeArray[0];
-  var s = checkSecond((timeArray[1] - 1));
-  if(s==59){m=m-1}
-  if(m<0){
-    return
-  }
-  
-  document.getElementById('countdown').innerHTML =
-    m + ":" + s;
-  console.log(m)
-  setTimeout(empezar, 1000);
-    
-}
-
-function checkSecond(sec) {
-  if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
-  if (sec < 0) {sec = "59"};
-  return sec;
+  restore_array = [];
+  index = -1;
 }
 
 const btn = document.getElementById('play');
-const img = document.getElementById('img')
 
-function ocultar(){
-{
-    btn.style.display = 'none';
-    img.style.display = 'none';
-}}
+function delay(time) {
+  return new Promise(resolve => setTimeout(resolve, time));
+}
+
+async function tiempo(){
+  document.getElementById("image_shower").src = "./img/a.png";
+  btn.style.visibility = 'hidden';
+  for (var i = 59; i > -1; i--) {
+    await delay(1000);
+    n = i;
+    console.log(i);
+    if (i<10){
+      n = "0" + n;
+    }
+    document.getElementById('countdown').innerHTML = "00:" + n;
+ }
+ btn.style.visibility= 'visible';
+ document.getElementById('countdown').innerHTML = "01:00";
+ document.getElementById("image_shower").src = "./characters/" + selected_image;
+ is_drawing = false;
+}
 

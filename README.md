@@ -16,20 +16,11 @@ tales como colores, tamaño del pincel, botones para deshacer y borrar, etc.
   - javascript==ECMAScript 2021 (12th edition)
 
 
-## :checkered_flag: Instalación:
-
-Deberá descargar los archivos desde el repositorio del proyecto con los siguiente comandos:
-
-```sh
-$ git init
-$ git clone --branch master https://github.com/GonzaloBisio/Proyecto2022-Bisio-Diaz
-```
-
 ## :rocket: Ejecución del Proyecto:
 
-Para ejecutar proyecto deberá ejecutar el archivo de la carpeta recientemente clonada, llamado index.html:
+Para ejecutar proyecto deberá clickear en el siguiente link, donde se mostrará por github pages nuestra web:
 
-![](<img/install.png>)
+[https://gonzalobisio.github.io/Proyecto2022-Bisio-DiazR/]
 
 ## :memo: Licencia:
 
